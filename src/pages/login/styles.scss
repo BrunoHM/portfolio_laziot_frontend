@@ -1,0 +1,32 @@
+@use '../../commonStyles.scss' as commonStyles;
+
+.loginBox{
+    text-align: center;
+    button {
+        margin: 5px;
+        width: 25%;
+    }
+    .btnLogginfalse{
+        color: grey !important;
+        border-color: grey !important;
+    }
+}
+.userLoginBox {
+    width: 25%;
+    display: inline-block;
+
+    div {
+        margin: 5px;
+    }
+    
+    fieldset {
+        border-color: darken(commonStyles.$defaultTextColor, 15%) !important;
+    }
+
+    .Mui-focused fieldset{
+        border-color: darken(commonStyles.$defaultTextColor, 40%) !important;
+    }   
+}
+.MuiButton-root {
+    border-color: commonStyles.$defaultBorderColor !important;
+}

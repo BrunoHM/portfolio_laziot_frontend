@@ -1,0 +1,54 @@
+
+#boxTextsActions {
+    width: 50%;
+    #descriptionAction{
+        width: 100%;
+    }
+}
+
+#actionList {
+    display: flex;
+    width: 50%;
+    #boxDeviceList {
+        height: 30%;
+        width: 100%;
+        overflow: auto;
+        display: block;
+    }
+}
+#checksAction {
+    width: 50%;
+    display: inline-flex;
+    #doubleAction {
+        display: inline-flex;
+    }
+    #statusAction {
+        display: inline-flex;
+    }
+}
+.spacer {
+    margin-left: 3em;
+}
+
+#newActionBox {
+    margin-top: 1em;
+    padding-top: 1em;
+    border: solid;
+    border-width: 2px 0px 0px 0px;
+    #inputTriggerDevice {
+        background-color: #454546;
+        padding: 0px 5px 0px 5px;
+    }
+}
+
+#paperNewAction {
+    border: solid 2px;
+    margin-top: 1em;
+    background-color: inherit;
+    border-radius: 10px;
+}
+
+.formDataNewAction {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+}

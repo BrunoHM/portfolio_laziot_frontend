@@ -1,0 +1,36 @@
+@use '../../commonStyles.scss' as commonStyles;
+
+.containerLD {
+    align-self: center;
+    button {
+        border: solid 1px;
+    }
+}
+.MuiSvgIcon-root {
+    font-size: 1.8em !important;
+}
+
+#boxModalLinkDevice {
+    background-color: commonStyles.$defaultBGColor;
+    width: 75%;
+    height: 75%;
+    border-radius: 10px;
+}
+
+#boxModalLinkDevice2 {
+    background-color: commonStyles.$defaultBGColor;
+    width: 75%;
+    height: 75%;
+    border-radius: 10px;
+}
+.noRecords {
+    background-color: commonStyles.$defaultBGColor !important;
+    text-align: center;
+    margin-bottom: 3em;
+    span {
+        color: commonStyles.$defaultTextColor !important;
+    }
+}
+.boxActions {
+    text-align: center;
+}

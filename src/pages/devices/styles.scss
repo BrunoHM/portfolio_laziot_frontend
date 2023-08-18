@@ -1,0 +1,114 @@
+$tableBackgroundColor : #5dc1b9;
+$defaultBorderColor: #a0f3ee;
+
+#filters {
+    flex-direction: row;
+    background-color: $tableBackgroundColor;
+    border: solid 3px $defaultBorderColor !important;
+    padding: 10px;
+    border-radius: 10px;
+    * {
+        color: black !important;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    input {
+        border: solid 3px #8ae0db !important; 
+        border-radius: 10px;
+    }
+    #boxTexts {
+        width: 50%;
+        .texts {
+            width: 45%;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    }
+    #type {
+        width: 15%;
+        option {
+            background-color: lighten($color: $tableBackgroundColor, $amount: 10%);
+        }
+    }
+    #status {
+        width: 20%;
+        margin-left: 5%;
+        margin-right: 5%;
+        vertical-align: middle;
+        text-align: center;
+        display: inline-flex;
+    }
+    
+    select {
+        margin-top: 2%;
+    }
+}
+
+#search {
+    text-align: center;
+    margin-top: 1em;
+    button {
+        background-color: $tableBackgroundColor;
+        width: 20%;
+        border: solid 3px $defaultBorderColor !important;
+        color: black !important;
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
+
+.paperTable {
+    margin-top: 3em;
+    border: solid 3px $defaultBorderColor !important;
+    font-weight: bold;
+    * {
+        color: black !important;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    thead {
+        background-color: $tableBackgroundColor;
+        th {
+            background-color: inherit;
+            min-width: 100px;
+        }
+    }
+    tbody {
+        background-color: lighten($color: $tableBackgroundColor, $amount: 25%) ;
+        td {
+            min-width: 100px;
+            line-height: 1em;
+        }
+        .col_description {
+            display: block;
+            height: 1em;
+            line-height: 1em;
+            overflow: hidden;
+            background-color: inherit;
+        }
+        .switchDeviceActive input {
+            left: -100% !important;
+            width: 300% !important;
+        }
+        .boxActions {
+            display: inline-flex;
+            .btnCopyCode {
+                border: solid 1px #5dc1b9 !important;
+            }
+        }
+    }
+
+    .footerTable {
+        background-color: $tableBackgroundColor;
+    }
+}
+.MuiMenu-list {
+    background-color: $tableBackgroundColor;
+    * {
+        color: black !important;
+    }
+}
+
+#noDevices {
+    padding: 1.5em;
+}

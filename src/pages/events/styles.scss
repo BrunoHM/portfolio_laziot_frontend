@@ -1,0 +1,65 @@
+@use '../../commonStyles.scss' as commonStyles;
+$tableBackgroundColor : #5dc1b9;
+
+#boxDates {
+    display: inline-flex;
+}
+
+#checks {
+    text-align: center;
+}
+
+.MuiCalendarPicker-root {
+    background-color: commonStyles.$defaultBGColor;
+    border: solid 3px;
+    button {
+        background-color: commonStyles.$defaultLightBGColor;
+        border: solid 2px;
+    }
+}
+#checks {
+    margin-left: 5%;
+    width: 30%;
+    label {
+        width: 40%;
+    }
+}
+
+#paperTable {
+    margin-top: 3em;
+    border: solid 3px commonStyles.$defaultBorderColor !important;
+    font-weight: bold;
+    * {
+        color: black !important;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    thead {
+        th {
+            background-color: $tableBackgroundColor;
+            min-width: 100px;
+        }
+    }
+    tbody {
+        background-color: lighten($color: $tableBackgroundColor, $amount: 25%) ;
+        td {
+            min-width: 100px;
+            line-height: 1em;
+        }
+        .col_description {
+            display: block;
+            height: 1em;
+            line-height: 1em;
+            overflow: hidden;
+            background-color: inherit;
+        }
+        .switchDeviceActive input {
+            left: -100% !important;
+            width: 300% !important;
+        }
+    }
+
+    #footerTable {
+        background-color: $tableBackgroundColor;
+    }
+}

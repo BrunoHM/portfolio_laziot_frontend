@@ -1,0 +1,32 @@
+$defaultBGColor: #454546;
+$defaultLightBGColor: #666666;
+$defaultTextColor: #8ae0db;
+$defaultBorderColor: #5dc1b9;
+
+* {
+    border-color: $defaultBorderColor !important;
+    color: $defaultTextColor !important;
+}
+
+.App {
+    height: 100%;
+}
+
+.divStatus {
+    float: right;
+}
+
+.paperStatus {
+    width: 10em;
+    border: solid 2px;
+    border-radius: 5px !important;
+    padding: 5px;
+}
+
+#serverok {
+    background-color: darkgreen !important;
+}
+
+#servernok {
+    background-color: darkred !important;
+}

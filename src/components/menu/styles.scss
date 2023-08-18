@@ -1,0 +1,32 @@
+@use '../../commonStyles.scss' as commonStyles;
+
+
+#imgBackground {
+    position: absolute;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    background-repeat: no-repeat;
+    left: 10%;
+}
+
+#boxMenu {
+    height: 95%;
+}
+
+.menuNav {
+    background-color: commonStyles.$defaultLightBGColor;
+    div:nth-child(1){
+        display: inline;
+    }
+    button {
+        font-weight: bold;
+        color: commonStyles.$defaultTextColor;
+        &:last-child {
+            float: right;
+        }
+    }
+    .Mui-selected {
+        background-color: darken(commonStyles.$defaultBGColor, 5%);
+        color: lighten(commonStyles.$defaultTextColor, 40%);
+    }
+}
